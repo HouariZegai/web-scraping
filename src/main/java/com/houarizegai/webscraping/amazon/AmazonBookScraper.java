@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class AmazonBookScraper {
     public static void main(String[] args) throws IOException {
-            String url = "https://www.amazon.com/Best-Sellers-Kindle-Store-Computer-Programming/zgbs/digital-text/156140011";
+        String url = "https://www.amazon.com/Best-Sellers-Kindle-Store-Computer-Programming/zgbs/digital-text/156140011";
         Document page = Jsoup.connect(url).userAgent("JSoup scraper").get();
 
         String bookTitleSelector = "p13n-sc-truncate";
